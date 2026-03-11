@@ -6,7 +6,7 @@
 .DS_Store
 
 logs/
-artifacts/
+artifacts/*.csv
 mlruns/
 mlflow.db
 

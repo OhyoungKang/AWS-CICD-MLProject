@@ -86,7 +86,7 @@ class DataTransformation:
             logging.info("Applying preprocessing object on training dataframe and testing dataframe.")
 
             transformed_input_train_feature=preprocessing_obj.fit_transform(input_feature_train_df)
-            transformed_input_test_feature=preprocessing_obj.fit_transform(input_feature_test_df)
+            transformed_input_test_feature=preprocessing_obj.transform(input_feature_test_df)
 
             train_arr=np.c_[transformed_input_train_feature,np.array(target_feature_train_df)]
             test_arr=np.c_[transformed_input_test_feature,np.array(target_feature_test_df)]
